@@ -1,0 +1,555 @@
+:root{
+  --mainTheme:#e8e8e8 ;
+  --fallout:#e2ebea;
+  --stalker:#fcd552;
+  --fallout3:#2e4e1c;
+  --pravda:#f1dd9e;
+  --linearBack:linear-gradient(to bottom, rgba(181,189,200,1) 0%,
+            rgba(130,140,149,1) 36%,
+            rgba(40,52,59,1) 100%);;
+  --shadow:#101010;
+}
+
+body{
+	background-color:var(--mainTheme);
+  margin:0;
+ 
+  
+
+
+}
+
+
+img{
+   border-radius:90%;
+   size:3rem;
+}
+
+}
+
+
+
+/***************CLASSES************************/
+.navbar{
+  overflow:hidden !important;
+}
+.section-title h2{
+  font-size:9vh;
+  word-wrap: break-word;
+  overflow:hidden;
+}
+.title-underline{
+   max-width:13rem;
+   height:0.8rem;
+   margin:0 auto;
+   border-radius:70%;
+   background-color: gold;
+   overflow:hidden; 
+}
+
+
+.my-border{
+  border:0.9rem var(--fallout3) dashed;
+  max-width:30%;
+  margin:0.5rem auto;
+  border-size:1rem;
+  border-bottom:0;
+  border-right:0;
+  border-left:0;
+  
+  height:.5rem;
+
+}
+/***********SALVAGE****************/
+.carousel-item{
+    border:1px solid crimson;
+    position:relative;
+
+}
+.salvage-text-small{
+  font-size:3vh;
+
+  position:relative;
+  top:1rem;
+}
+
+
+
+
+.card-now {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+/***************IDs************************/
+
+/*********HISTORY*************/
+#history{
+  background-color:#d4d7dd ;	
+  margin-top:4.5rem;
+   overflow:hidden;
+
+
+}
+
+#history .img{
+  border-color:var(--mainTheme) !important;
+}
+#history .img-thumbnail{
+  border-radius:100% !important;
+  border-color:var(--mainTheme) !important;
+
+
+}.short-history{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height:1.7rem;
+  font-size:1rem;
+}
+/****BREAKING-POINT*********/
+#breaking-point{
+  overflow:hidden;
+}
+#breaking-point .jumbotron{
+  background:url("images/theLab.jpeg") center/cover no-repeat fixed;
+  opacity:.95 ;
+}
+
+#breaking-point .card{
+  width:90%;
+  outline:.3rem ridge var(--fallout3);
+
+  background:var(--pravda);
+  margin:auto auto;
+
+
+
+}
+#breaking-point .card-body{
+  border-radius:3%;
+  border:0.3rem inset;
+  text-align:center;
+
+}
+
+#breaking-point .card-img-top{
+   border-radius:90%;
+   padding:.1rem;
+   margin:.3rem;
+   border:.3rem solid black;
+
+}
+#breaking-point .section-title{
+  background:var(--pravda);
+  opacity: .89;
+  margin:auto;
+
+}
+#breaking-point .section-title,.history-title strong {
+  font-family: 'Abril Fatface', cursive;
+  color:black;
+}
+#breaking-point .title-underline{
+  background-color:black;
+}
+#breaking-point .card-body>p{
+  font-family: 'PT Mono', monospace;
+  line-height:1.3rem;
+}
+/*************SALVAGE OPERATION**************/
+#salvage{
+  min-height:90vh;
+  overflow:hidden;
+}
+#salvage .container-fluid{
+    background:linear-gradient(90deg, rgba(212,228,239,.7), 
+      rgba(210,223,239,.8) 70.71%),
+    url("images/rescue.jpeg") center/cover no-repeat fixed;
+}
+
+#salvage .section-title{
+  margin:auto;
+  text-shadow:var(--pravda) .2rem  0 .3rem;
+
+}
+#salvage .section-title, strong {
+  font-family: 'Abril Fatface', cursive;
+  color:black;
+}
+#salvage h5.h5-salvage,.p-salvage,.salvage-text-small {
+  font-family: 'Roboto Mono', monospace !important;
+  
+}
+@media only screen and  (min-width:769px){
+  #salvage .h5-salvage{
+    font-size:6vh !important;
+    color:crimson;
+    background:white;
+    opacity:.7;
+    position:relative;
+    top:1rem;
+    bottom:2rem;
+
+    display:inline-block;
+    border-radius:10%;
+    margin:auto;
+    padding:.3rem;
+ 
+    
+  }
+  .salvage-first{
+    position:relative;
+    top:3rem;
+    bottom:7rem;
+    color:#ffffff;
+    background-color:#111111;
+    font-size:1.3rem;
+    display: inline-block;
+    margin:auto;
+    
+  }
+  .p-salvage-show{
+    visibility: hidden;
+    position:relative;
+    top:1rem;
+    bottom:2.3rem;
+    background-color:#222222;
+    color:color:#ffffff;
+    line-height:1.4rem;
+    margin:auto;
+    padding:.7rem;
+  }
+  .p-salvage:hover .p-salvage-show{
+    visibility: visible;
+  }
+  .p-salvage:hover .salvage-first{
+    visibility: hidden;
+  }
+  
+  
+  
+}
+
+@media only screen and  (max-width:768px){
+  #salavge .carousel-item{
+    height:80vh;
+  }
+
+  #salvage .h5-salvage{
+    font-size:6vh !important;
+    color:crimson;
+    background:white;
+    opacity:.7;
+    position:relative;
+    top:1rem;
+    bottom:2rem;
+
+    display:inline-block;
+    border-radius:10%;
+    margin:auto;
+    padding:.3rem;
+
+  }
+   #salvage .p-salvage{
+    font-size:.9rem !important;
+    
+
+  }
+  .salvage-text-small{
+    background:black;
+    opacity:.75 ;
+    border-radius:10%;
+    line-height: .8rem;
+    padding:.5rem;
+    max-width:70%;
+    word-wrap: break-word;
+
+    margin:auto;
+
+  }
+
+}
+
+
+/*****************FALLOUT***********************/
+
+#fallout{
+  background: url("images/abandoned5.jpg") center/cover no-repeat fixed; 
+  opacity:.93;
+  border:1px solid crimson;
+  overflow:hidden;
+}
+
+#fallout .row{
+  color:white;
+  font-family: 'Turret Road', cursive;
+}
+#fallout .section-title h2 strong{
+  margin:1rem;
+
+  font-family: 'Trochut', cursive;
+  font-style: oblique;
+  color:white;
+}
+.fallout-container{
+  padding:1rem;
+  border:1px solid crimson;
+  position:relative;
+
+
+}.fallout-container p{
+  font-family: 'Turret Road', cursive;
+  color:#ecf4f3;
+  text-align: center
+}
+.exclusion-zone{
+  padding:1rem;
+
+
+}
+.exclusion-zone h2{
+  font-family: 'Kaushan Script', cursive;
+  color:crimson;
+}
+.exclusion-zone p{
+  text-align: center;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color:#DCDCDC;
+}
+.exclusion-zone-border{
+ height:2rem;
+ width:100%;
+ border-top:1rem dashed crimson;
+ border-bottom:1rem dashed crimson;
+ transform:skew(-30deg);
+}
+.fallout-img{
+    transition:all 2s ease-in-out;
+    overflow:hidden;
+    margin:auto;
+    width:83%;
+
+
+}
+.fallout-text{
+  padding:1rem;
+
+  transition:all 2s ease-in-out;
+}
+
+/**************media queries****************/
+@media only screen and  (min-width:768px){
+.fallout-container:hover .fallout-img{
+   transform: scale(1.3);
+   padding:2rem;
+   margin-left:11rem !important;
+   
+   
+}
+.fallout-container:hover .fallout-text{
+   box-shadow: inset .2rem .2rem .2rem .5rem var(--shadow);
+   padding:.5rem;
+   margin:2rem;
+   margin-left:11rem !important;
+   font-size:1rem;
+   padding:auto;
+   
+   
+}
+
+}
+
+@media only screen and  (max-width:768px){
+.fallout-container:hover .fallout-img{
+   transform: scale(1.2);
+   margin-right:1rem;
+   padding:1rem;
+    
+   
+}
+.fallout-container:hover .fallout-text{
+   box-shadow: inset .2rem .2rem .2rem .5rem var(--shadow);
+   padding:.5rem;
+   margin:1rem;
+   
+   align-self: center; 
+   
+}
+
+}
+
+
+/************************NOW*****************/
+#now{
+  overflow:hidden;
+}
+ #now .container-fluid{
+  border:1px solid crimson;
+  background: linear-gradient(135deg, rgba(149,149,149,1)
+         4%,rgba(56,56,56,1) 57%,rgba(78,78,78,1) 
+         76%,rgba(1,1,1,1) 95%,rgba(1,1,1,1) 
+         95%,rgba(27,27,27,1) 100%);
+
+ }
+  #now .carousel-control-prev,.carousel-control-next {
+    filter: invert(100%);
+}
+
+#now .card-body-now p{
+
+  font-family: 'Special Elite', cursive;
+}
+#now .modal-content{
+  background:var(--pravda);
+}
+#now .modal-title{
+  font-family: 'Press Start 2P', cursive;
+}
+#now .section-title h2 strong{
+  font-family: 'Fredericka the Great', cursive;
+  font-style:italic; 
+  color:#181818; 
+}
+#now .section-title p{
+  font-family: 'Press Start 2P', cursive;
+  font-size:.9rem;
+  margin:auto;
+  word-break: break-all;
+}
+.card-now{
+  background: linear-gradient(234deg, rgba(255,255,255,1) 0%,
+   rgba(219,219,219,1) 14%, rgba(0,0,0,1) 100%);
+ 
+}
+
+
+/***********medium screen***********/
+@media only screen and (min-width:768px){
+
+.card-body-now{
+ 
+  overflow:hidden;
+}
+.card-now h2{
+  color:green;
+}
+.card-now .row{
+    
+    padding:.8rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+} 
+
+.card-img-now{
+  padding:.5rem;
+  border-radius:27%;
+  border:1px solid blue;
+  min-height:43vh;
+  width:93%;
+ 
+  
+
+}
+.card-text-now{
+  width:100%;
+  border:1px solid blue;
+  padding:.7rem;
+}
+
+
+
+}
+
+
+/***********small screen***********/
+
+@media only screen and (max-width:768px){
+  
+  .carousel-inner-now{
+    border:1px solid gold;
+    max-width:93% !important;
+    margin:2rem auto;
+  }
+  .card-now{
+   border:1px solid navy;
+  }
+  .card-img-now{
+    border:1px solid crimson;
+    border-radius:10%;
+    max-width:93% ;
+    max-height:73vh;
+    
+
+  }
+  .text-sm-now {
+    color:white !important;
+  }
+   
+
+  /********modal***********/ 
+  .modal-header{
+    display: flex !important;
+    justify-content:center !important;
+
+  }
+
+  .modal-title{
+   margin:auto;
+  }
+  .modal-body p {
+   margin:auto;
+}
+  .modal-footer button{
+    margin:auto;
+  }
+  
+}
+
+
+/**************FOOTER******************/
+#footer{
+  overflow:hidden;
+}
+#footer{
+  background:black;
+  color:white;
+
+
+}
+#footer .row{
+ 
+
+}
+#footer .icons{
+  font-size:1.7rem;
+}
+#footer .fa-wikipedia-w{
+  color:#686868;
+}
+#footer .search{
+  color:#0000FF;
+  font-family: 'Caveat Brush', cursive;
+  text-decoration:none;
+}
+#footer .fa-youtube-square{
+  color:#880000 ;
+}
+.fa-briefcase{
+  color:#0033FF;
+}
+.thanks{
+  font-family: 'Indie Flower', cursive;
+  text-transform:capitalize; ;
+}
+#footer p{
+  font-family: 'Just Another Hand', cursive;
+  font-size:1.9rem;
+  color:  #F5F5F5;
+  word-spacing: .2rem;
+}
+
+
+
+
+
+
